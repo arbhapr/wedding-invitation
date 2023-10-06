@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template-1</title>
+</head>
+
+<!-- CSS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@400;600;700&display=swap"
+    rel="stylesheet">
+<link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="/assets/css/simplyCountdown.theme.default.css" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/custom.css">
+
+<body>
+    <section id="hero"
+        class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
+        <main>
+            <h4>Yth. Bapak/Ibu/Saudara/i</h4>
+            <h1>Romeo & Juliet</h1>
+            <p>Akan melangsungkan pernikahan pada:</p>
+            <div id="simply-countdown" class="simply-countdown"></div>
+            <a href="#undangan" class="btn btn-md mt-4">Buka Undangan</a>
+        </main>
+    </section>
+
+    <section id=""></section>
+    <!-- JS -->
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/simplyCountdown.min.js"></script>
+    <script>
+        simplyCountdown("#simply-countdown", {
+            year: 2023, // required
+            month: 11, // required
+            day: 1, // required
+            hours: 9, // Default is 0 [0-23] integer
+            minutes: 0, // Default is 0 [0-59] integer
+            seconds: 0, // Default is 0 [0-59] integer
+            words: { //words displayed into the countdown
+                days: { singular: 'hari', plural: 'hari' },
+                hours: { singular: 'jam', plural: 'jam' },
+                minutes: { singular: 'menit', plural: 'menit' },
+                seconds: { singular: 'detik', plural: 'detik' }
+            },
+        });
+    </script>
+</body>
+
+</html>
