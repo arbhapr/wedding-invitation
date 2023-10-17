@@ -73,7 +73,7 @@ body {
 .mynavbar .offcanvas-title {
     font-family: 'Sacramento', cursive;
     font-size: 2.3rem;
-    /* color: var(--pink); */
+    color: var(--pink);
     font-weight: bold;
 }
 
@@ -81,9 +81,9 @@ body {
     text-transform: uppercase;
 }
 
-/* .mynavbar .nav-link:hover {
+.mynavbar .nav-link:hover {
     color: var(--pink);
-} */
+}
 
 /* Home Section */
 .home {
@@ -124,14 +124,42 @@ body {
 }
 
 .home .couple img {
-    width: 100%;;
+    width: 100%;
+}
+
+.home .heart {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(65px);
+}
+
+.home .heart i {
+    color: var(--pink);
+    margin: auto;
 }
 
 /* Media Query */
+/* Extra Large */
+@media (max-width: 1200px) {
+    .home .heart {
+        transform: translateX(-50%) translateY(45px);
+    }
+}
+
 /* Laptop */
 @media (max-width: 992px) {
     html {
         font-size: 75%;
+    }
+
+    .home .heart {
+        display: none;
     }
 }
 
