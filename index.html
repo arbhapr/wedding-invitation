@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Template-1</title>
 </head>
 
@@ -17,6 +17,7 @@
 <link rel="stylesheet" href="assets/css/custom.css">
 
 <body>
+    <!-- Hero Section -->
     <section id="hero"
         class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
         <main>
@@ -24,11 +25,81 @@
             <h1>Romeo & Juliet</h1>
             <p>Akan melangsungkan pernikahan pada:</p>
             <div id="simply-countdown" class="simply-countdown"></div>
-            <a href="#undangan" class="btn btn-md mt-4">Buka Undangan</a>
+            <a href="#home" class="btn btn-md mt-4">Buka Undangan</a>
         </main>
     </section>
 
-    <section id=""></section>
+    <!-- Navbar -->
+    <nav class="navbar bg-transparent navbar-expand-md sticky-top mynavbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">Romeo</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Romeo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="#home">Beranda</a>
+                        <a class="nav-link" href="#info">Informasi</a>
+                        <a class="nav-link" href="#story">Cerita</a>
+                        <a class="nav-link" href="#rsvp">Kehadiran</a>
+                        <a class="nav-link" href="#gifts">Hadiah</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2>Acara Pernikahan</h2>
+                    <h3>Diselenggarakan pada 01 November 2023 di Jakarta Selatan, DKI Jakarta</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem cum voluptatum at tempora
+                        delectus vel omnis incidunt dignissimos sit quos.</p>
+                </div>
+            </div>
+            <div class="row couple">
+                <div class="col-lg-6 col-md-12">
+                    <div class="row">
+                        <div class="col-8 text-end">
+                            <h3>Romeo</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aliquid fugiat, quaerat
+                                necessitatibus in nam dicta rem animi sunt mollitia.</p>
+                            <p>Putra dari Bpk. Lorem <br> dan <br> Ibu Ipsum</p>
+                        </div>
+                        <div class="col-4">
+                            <img src="/assets/images/profile-vector.jpg" class="img-responsive rounded-circle"
+                                alt="Romeo" srcset="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="/assets/images/profile-vector.jpg" class="img-responsive rounded-circle"
+                                alt="Romeo" srcset="">
+                        </div>
+                        <div class="col-8">
+                            <h3>Juliet</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aliquid fugiat, quaerat
+                                necessitatibus in nam dicta rem animi sunt mollitia.</p>
+                            <p>Putra dari Bpk. Ipsum <br> dan <br> Ibu Lorem</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- JS -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/simplyCountdown.min.js"></script>
